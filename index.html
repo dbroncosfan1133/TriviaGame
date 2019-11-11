@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Trivia Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron mainHeader">
+            <div class="row">
+                <p class="col-12">Trivia Game!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="countDown">
+                <p>Timing Remaining: <span id="timer"></span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 questions" id="question1">
+                <p>What is the only state that can be typed on one row of keys on a QWERTY keyboard?</p>
+            </div>
+            <div class="answers col-12 justify-content-center">
+                <table class="mb-3 justify-content-center" id="answer1">
+                    <tr>
+                        <td><p><input type="radio" class="radioBtn m-3" name="radio1">Texas</p></td>
+                        <td><p><input type="radio" class="radioBtn m-3" name="radio2">Alaska</p></td>
+                        <td><p><input type="radio" class="radioBtn m-3" name="radio3">Maine</p></td>
+                        <td><p><input type="radio" class="radioBtn m-3" name="radio4">Georgia</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-12 questions" id="question2">
+                    <p>What is the only U.S. state home to a real royal palace once used by a monarchy?</p>
+                </div>
+                <div class="answers col-12 justify-content-center">
+                    <table id="answer2">
+                        <tr>
+                            <td><p><input type="radio" class="radioBtn m-3" name="radio1">Maine</p></td>
+                            <td><p><input type="radio" class="radioBtn m-3" name="radio2">Montana</p></td>
+                            <td><p><input type="radio" class="radioBtn m-3" name="radio3">Virginia</p></td>
+                            <td><p><input type="radio" class="radioBtn m-3" name="radio4">Hawaii</p></td>
+                        </tr>
+                    </table>
+                </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
