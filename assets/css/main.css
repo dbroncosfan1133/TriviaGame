@@ -3,22 +3,6 @@
     font-size: 54px;
 }
 
-.questions {
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
-    
-}
-
-.answers {
-    text-align: center;
-    font-size: 24px;
-}
-
-.radioBtn {
-    font-size: 24px;
-}
-
 #countDown {
     text-align: center;
     font-size: 24px;
