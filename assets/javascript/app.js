@@ -42,7 +42,7 @@ var questions = [{
 var choices = ["first", "second", "third", "fourth"];
 
 $(".startGame").on("click", function() {
-    countdown(30);
+    countdown(60);
     showQuestions();
 });
 
