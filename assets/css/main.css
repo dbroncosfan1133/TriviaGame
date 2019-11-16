@@ -1,6 +1,7 @@
 .mainHeader {
     text-align: center;
     font-size: 54px;
+
 }
 
 #countDown {
@@ -8,6 +9,6 @@
     font-size: 24px;
 }
 
-#question1 {
-    text-align: center;
+body {
+    background-image: url(../images/background.jpg);
 }
