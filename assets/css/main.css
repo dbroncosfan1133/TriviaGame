@@ -4,11 +4,25 @@
 
 }
 
+.ques-title {
+    padding: 10px;
+}
+
+.jumbotron {
+    background-color: #99866b;
+}
+
 #countDown {
     text-align: center;
     font-size: 24px;
 }
 
+#choices {
+    margin: 10px;
+}
+
 body {
     background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

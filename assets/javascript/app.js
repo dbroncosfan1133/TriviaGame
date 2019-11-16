@@ -16,7 +16,7 @@ var questions = [{
     question: "In the book 'The Odyessy,' Menelaus is king of which city?",
     answer: ["Athens", "Argos", "Pylos", "Sparta"],
     name: "odyessy",
-    correct: "Atacama Desert",
+    correct: "Sparta",
     class: ".odyessy"
 },{
     question: "Which med student's travels, before he became a Marxist icon, are detailed in the book 'The Motorcycle Diaries'?",
@@ -26,9 +26,9 @@ var questions = [{
     class: ".student"
 },{
     question: "Who is John Galt?",
-    answer: ["The 6th president of the United States", "Jack the Rippers real name", "A pseudonym for Ayn Rand", "A fictional character in 'Atlas Shrugged'"],
+    answer: ["The 6th president of the United States", "Jack the Rippers real name", "A pseudonym for Ayn Rand", "A fictional character in Atlas Shrugged"],
     name: "galt",
-    correct: "A fictional character in 'Atlas Shrugged'",
+    correct: "A fictional character in Atlas Shrugged",
     class: ".galt"
 },{
     question: "In the book '1984', what does Winston trace in the dust on the table at the end of the novel?",
@@ -42,7 +42,7 @@ var questions = [{
 var choices = ["first", "second", "third", "fourth"];
 
 $(".startGame").on("click", function() {
-    countdown(40);
+    countdown(30);
     showQuestions();
 });
 
@@ -53,7 +53,7 @@ var showQuestions = function () {
         $(questions[i].class).append('<div class ="ques-title">' + questions[i].question + '</div>');
 
         for (var j = 0; j <= 3; j++) {
-            $(questions[i].class).append("<input type='radio' name='" + questions[i].name + "' value='" + questions[i].answer[j] + "'/><label for='" + choices[j] + "'>" + questions[i].answer[j] + "</label>");
+            $(questions[i].class).append("<input type='radio' id='choices' name='" + questions[i].name + "' value='" + questions[i].answer[j] + "'/><label for='" + choices[j] + "'>" + questions[i].answer[j] + "</label>");
         }
         $(".questions").prepend("<hr />");
         }
@@ -76,6 +76,7 @@ var countdown = function(seconds) {
                     wrongAnswers++;
         };
     }
+    alert("Times Up!!!" + "\n" + "Number Correct: " + correctAnswers + "\n" + "Number Wrong: " + wrongAnswers);
     clearInterval(timer);
     return;
 }
@@ -83,6 +84,7 @@ var countdown = function(seconds) {
 
 $("#submit").on("click", function() {   
     clearInterval(timer);
+    $(".container").fadeOut(500);
 })
 
 };
@@ -99,6 +101,8 @@ var results = $("#submit").on("click", function() {
         };
     };
     countdown();
+    
+    alert("Number Correct: " + correctAnswers + "\n" + "Number Wrong: " + wrongAnswers);
 
 })
 
